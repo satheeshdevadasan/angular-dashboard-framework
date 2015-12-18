@@ -41,10 +41,12 @@ angular.module('sample-03', ['adf', 'LocalStorageModule'])
           widgets: [{
             title: 'Description',
             titleTemplateUrl: 'partials/custom-widget-title.html',
+            footerTemplateUrl: 'partials/custom-widget-footer.html',
             editTemplateUrl: "partials/custom-dashboard-editwidget.html",
             type: 'markdown',
             config: {
-              content: 'This sample uses a widget filter, to restrict the widget selection on the "add dialog".\n\nIt also shows the ability to use custom templates for the dashboard title and widget title.'
+                content: 'This sample uses a widget filter, to restrict the widget selection on the "add dialog".\n\nIt also shows the ability to use custom templates for the dashboard title and widget title.\n\n This widget uses footer.'
+
             }
           }]
         }, {

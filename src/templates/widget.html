@@ -5,4 +5,7 @@
   <div ng-class="{'panel-body':!widget.frameless || editMode}" uib-collapse="widgetState.isCollapsed">
     <adf-widget-content model="definition" content="widget" />
   </div>
+  <div ng-class="{'panel-footer':!widget.frameless || editMode}" uib-collapse="widgetState.isCollapsed" ng-if="definition.footerTemplateUrl">
+        <div ng-include src="definition.footerTemplateUrl"></div>
+  </div>
 </div>
